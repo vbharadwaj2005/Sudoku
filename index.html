@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="public/sudoku.ico">
+    <title>Sudoku</title>
+</head>
+<body>
+    <a href="https://vbharadwaj2005.vercel.app" target="_blank" class="website-link-icon" title="Visit my profile"></a>
+    <div id="difficultyOverlay">
+        <div class="modal">
+            <h1>Sudoku</h1>
+            <h2>Select Difficulty</h2>
+            <div class="modal-buttons">
+                <button id="easyBtn">Easy</button>
+                <button id="mediumBtn">Medium</button>
+                <button id="hardBtn">Hard</button>
+            </div>
+        </div>
+    </div>
+    <div id="gameContainer" class="hidden">
+        <div id="topBar">
+            <button id="backButton">&lt; Back</button>
+            <div class="title-container">
+                <h3>Sudoku</h3>
+                <span id="pauseMessage" class="hidden">Paused</span>
+            </div>
+            <div id="controls">
+                <span id="winMessage"></span>
+                <span id="mistakes">Mistakes: 0 / 3</span>
+                <span>Time: <span id="timer">00:00</span></span>
+                <button id="startBtn">Start</button>
+                <button id="pauseBtn" disabled>Pause</button>
+            </div>
+        </div>
+        <div id="sudoku-board"></div>
+        <div id="number-pad"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
